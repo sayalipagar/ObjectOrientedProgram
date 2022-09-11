@@ -1,0 +1,20 @@
+[
+  {
+    "StockName": "PQR",
+    "NoOfShare": 30,
+    "SharePrice": 50
+  },
+
+  {
+    "StockName": "XYZ",
+    "NoOfShare": 30,
+    "SharePrice": 50
+  },
+
+  {
+    "StockName": "abc",
+    "NoOfShare": 30,
+    "SharePrice": 50
+  }
+
+]

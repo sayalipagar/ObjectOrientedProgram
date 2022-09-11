@@ -1,5 +1,6 @@
 ﻿using OOPsProgramm.InventoryManagement;
 using OOPsProgramm.InventoryManagementSystem;
+using OOPsProgramm.StockAccountManagement;
 
 namespace OOPsProgramm
 {
@@ -7,11 +8,12 @@ namespace OOPsProgramm
     {
         const string INVENTORY_DATA_FILE_PATH = @"D:\DotNetPrograms\ObjectOrientedProgram\OOPsProgramm\InventoryManagement\Inventory.json";
         const string INVENTORYDETAILS_DATA_FILE_PATH = @"D:\DotNetPrograms\ObjectOrientedProgram\OOPsProgramm\InventoryManagementSystem\InventoryDetails.json";
+        const string STOCK_DATA_FILE_PATH = @"D:\DotNetPrograms\ObjectOrientedProgram\OOPsProgramm\StockAccountManagement\Stock.json";
         static void Main(string[] args)
         {
             while (true)
             {
-                Console.WriteLine("\nSelect Programm\n 1.Json Inventory Data Mangement\n 2.Inventory Management System");
+                Console.WriteLine("\nSelect Programm\n 1.Json Inventory Data Mangement\n 2.Inventory Management System\n 3.Stock");
                 int option = Convert.ToInt32(Console.ReadLine());
                 switch (option)
                 {
@@ -67,6 +69,10 @@ namespace OOPsProgramm
                                     break;
                             }
                         }
+                        break;
+                    case 3:
+                        Stock stock = new Stock();
+                        stock.ReadJsonFile(STOCK_DATA_FILE_PATH);
                         break;
                 }
             }
